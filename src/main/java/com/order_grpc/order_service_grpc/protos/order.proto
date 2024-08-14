@@ -1,0 +1,11 @@
+syntax = 'proto3';
+option java_package= 'com.order_grpc.order_service_grpc.dtos';
+
+message Order {
+  string orderId=1;
+  string invoiceId=2;
+  string customerId=3;
+  string createdTime=4;
+}
+
+

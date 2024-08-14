@@ -1,0 +1,7 @@
+syntax = 'proto3';
+option java_package = 'com.order_grpc.order_service_grpc.dtos';
+import "order.proto";  // Changed to lowercase to match the actual file name
+
+message OrderResponse {
+  repeated Order orders = 1;  // Changed 'order' to 'orders' for clarity
+}

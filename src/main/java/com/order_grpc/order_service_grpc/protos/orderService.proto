@@ -1,0 +1,8 @@
+syntax = 'proto3';
+option java_package = 'com.order_grpc.order_service_grpc.service';
+import "orderRequest.proto";  // Changed to match the actual file name
+import "orderResponse.proto";  // Changed to match the actual file name
+
+service OrderService {  // Changed to 'service' instead of 'message'
+  rpc getOrders(OrderRequest) returns (OrderResponse);
+}
